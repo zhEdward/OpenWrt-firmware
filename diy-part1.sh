@@ -16,6 +16,8 @@
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 使用该openwrt插件库要添加两个 否者编译LuCi_xx时候会报 WARNING: Makefile 'package/feeds/kenzo/luci-app-ssr-plus/Makefile' has a dependency on 'dns2tcp', which does not exist
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-# echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 
